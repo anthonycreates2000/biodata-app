@@ -1,0 +1,80 @@
+about-page #welcome-background{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url("../../image/about-background.jpg");
+    background-size: cover;
+    margin: 0;
+}
+about-page #welcome-container{
+    position: relative;
+    top: 50%;
+    height: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    background: linear-gradient(180deg, rgba(13,115,119,1) 0%, rgba(255,255,255,0) 100%);
+    margin: 0;
+    color: #14ffec;
+    font-style: oblique;
+    padding: 30px 30px 20px 30px;
+    border-top: 5px solid #14ffec;
+    border-bottom: 5px solid #14ffec; 
+}
+about-page #welcome-text{
+    position: relative;
+    font-size: 60px;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+about-page description-element .material-icons
+{
+    font-size: 60px;
+} 
+
+about-page description-element h1{
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+}
+about-page description-element::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    transform: translateX(-10%);
+    background: #14ffec;
+}
+
+#tech-skills img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+#tech-skills p{
+    text-align: center;
+}
+#tech-skills .image-caption-container,
+#tech-skills img,
+#greeting-emphasize{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#greeting-emphasize{
+    text-align: center;
+}
+.centerize{
+    text-align: center;
+}
+#greeting-emphasize h1{
+    display: inline-block;
+    padding: 0px;
+    width: 50%;
+    transform: translateY(-40%);
+}
+.padded{
+    padding: 20px !important;
+}

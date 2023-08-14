@@ -1,0 +1,113 @@
+.jumbotron{
+    position: relative;
+    background-color: black;
+}
+header a{
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding: 20px;
+}
+header .sidenav{
+    background-color: #323232;
+}
+header .sidenav a{
+    color: white;
+}
+#first-letter{
+    display: inline;
+    font-size: 90px;
+    margin-right: 10px;
+    color: #14FFEC;
+}
+#circle-icon-container{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    top: 0%;
+    left: 0%;
+    transform: translate(-20%, -20%);
+    border: 10px solid rgba(20, 255, 235, 0.432);;
+}
+.game-icon{
+    font-size: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateZ(-30deg);
+    color: rgba(20, 255, 235, 0.432);
+}
+header h1{
+    z-index: 20;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    color: #0eb1a3;
+}
+header .container{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+header nav .topnav{
+    display: block;
+    position: absolute;
+    left: 0%;
+}
+.border-bottom-effect::before{
+    position: absolute;
+    content: "";
+    z-index: 1;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 50px;
+    transition: 0.5s ease;
+    border-bottom: 3px dashed #14ffec;
+}
+.border-bottom-effect:hover::before{
+    width: 100%;
+}
+#sidenav-trigger-id{
+    position: relative;
+    padding: 0 5px;
+    margin: 0 0;
+    left: 100%;
+    transform: translateX(-100%);
+}
+nav{
+    background-color: #323232;
+}
+header nav a:hover{
+    color: #14FFEC;
+}
+header #menu-container{
+    overflow: hidden;
+    position: relative;
+    border: 0px solid #14ffec;
+    border-radius: 10px;
+    height: 45px;
+    width: 45px;
+    top: 50%;
+    transition: 0.3s ease-in;
+    transform: translateY(-50%);
+}
+header #menu-container:hover{
+    border: 5px solid #14ffec;
+}
+header #menu-icon{
+    position: relative;
+    width: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    transition: 0.5s ease;
+}
+header #menu-icon:hover{
+    color: #14FFEC;
+}

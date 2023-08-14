@@ -1,0 +1,58 @@
+render_3d_portfolio_project-page #heading-container{
+    position: relative;
+    overflow: hidden;
+    border-bottom: 5px solid #14ffec;
+    background: #212121;
+    padding: 10px;
+}
+render_3d_portfolio_project-page #heading-container #icon-container{
+    position: relative;
+    padding: 10px;
+}
+render_3d_portfolio_project-page #text-container{
+    position: relative;
+    z-index: 1;
+}
+render_3d_portfolio_project-page #heading-container i{
+    position: relative;
+    font-size: 100px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border-radius: 50%;
+    border: 5px solid #14ffec;
+    padding: 50px;
+}
+render_3d_portfolio_project-page #heading-container i::after{
+    position: absolute;
+    content: "";
+    border: 20px solid #0d7377;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+}
+render_3d_portfolio_project-page #heading-container #image-container{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+render_3d_portfolio_project-page #heading-container p{
+    position: relative;
+}
+render_3d_portfolio_project-page #heading-container h1{
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+render_3d_portfolio_project-page imagecard-component img{
+    object-fit: cover;
+}
+@media screen and (max-width: 600px){
+    render_3d_portfolio_project-page #text-container{
+        text-align: center;
+    }
+}

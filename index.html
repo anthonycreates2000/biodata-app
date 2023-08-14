@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website Portfolio</title>
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/pages/contact.css" rel="stylesheet">
+    <link href="css/pages/home-page.css" rel="stylesheet">
+    <link href="css/pages/about-page.css" rel="stylesheet">
+    <link href="css/card-component.css" rel="stylesheet">
+    <link href="css/pages/portfolio-page.css" rel="stylesheet">
+    <link href="css/image-card-component.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class = "jumbotron">
+            <a href="#" class = "brand-logo" id = "logo-container">
+                <h1><div id="first-letter">A</div>wesome Anthony Profile Website</h1>
+                <div id="circle-icon-container">
+                    <i class = "material-icons game-icon" id = "game-icon-1">games</i>
+                </div>
+            </a>
+        </div>
+        <nav role="navigation">
+            <div class = "nav-wrapper container">
+                <a href="#" class = "sidenav-trigger" data-target="nav-mobile" id = "sidenav-trigger-id">
+                    <div id = "menu-container">
+                        <i class = "material-icons" id = "menu-icon">menu</i>
+                    </div>                    
+                </a>
+                <ul class = "topnav hide-on-med-and-down"></ul>
+                <ul class = "sidenav" id="nav-mobile"></ul>
+            </div>
+        </nav>
+    </header>
+    <article id = "content">
+    </article>
+    <footer>
+        <p>@Copyright 2020 Anthony Kevin Oktavius.</p>
+    </footer>
+    <script src="materialize/js/materialize.min.js"></script>
+    <script src="js/page/init-pages.js" type="module"></script>
+    <script src="js/nav.js" type="module"></script>
+    <script>
+        const initializeServiceWorker = () => {
+            if ("serviceWorker" in navigator){
+                window.addEventListener("load", () => {
+                    navigator.serviceWorker
+                    .register("service-worker.js")
+                    .then(() => {
+                        console.log("Service worker has been successfully initialized!");
+                    })
+                    .catch(() =>{
+                        console.log("Service worker failed to be initialized!");
+                    });
+                });
+            }
+            else{
+                console.log("Oops! Your service worker isn't supported by browser yet!");
+            }
+        }
+        initializeServiceWorker();
+    </script>
+</body>
+</html>

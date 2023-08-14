@@ -1,0 +1,25 @@
+imagecard-component .card-content{
+    background-color: #323232;
+}
+imagecard-component .card::before,
+imagecard-component .card::after{
+    width: 60px;
+    height: 60px;
+    content: "";
+    z-index: 1;
+}
+imagecard-component .card::before{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    border-left: 6px solid #14ffec;
+    border-top: 6px solid #14ffec;
+}
+imagecard-component .card::after{
+    position: absolute;
+    top: 85%;
+    left: 100%;
+    transform: translate(-95%, 0%);
+    border-right: 6px solid #14ffec;
+    border-bottom: 6px solid #14ffec;
+}

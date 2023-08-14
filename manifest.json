@@ -1,0 +1,21 @@
+{
+    "name": "My Biodata PWA",
+    "short_name": "Biodata PWA",
+    "description": "My Biodata Website Portfolio",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#323232",
+    "theme_color": "#323232",
+    "icons": [
+        {
+            "src": "logo_192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "logo_512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

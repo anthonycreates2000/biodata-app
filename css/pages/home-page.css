@@ -1,0 +1,147 @@
+home-page #jumbo{
+    overflow: hidden;
+}
+home-page h1,
+home-page h2{
+    text-align: center;
+}
+home-page div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+home-page #profile-image-container{
+    margin-top: 30px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 290px;
+    height: 290px;
+    border-radius: 100%;
+    border: 30px ridge #0d7377;
+}
+home-page img{
+    width: 230px;
+    height: 230px;
+    border-radius: 100%;
+}
+home-page #big-letter, article #second-big-letter{
+    text-align: center;
+}
+home-page #first-big-container{
+    margin-top: 60px;
+    width: 60%;
+    position: relative;
+    padding: 20px;
+    left: 40%;
+    transform: translateX(-40%);
+    font-style: oblique;
+    letter-spacing: 0.8cm;
+    text-shadow: 6px 6px #14ffec;
+    border: 5px solid #14ffec;
+}
+home-page #big-letter{
+    font-size: 60px;
+    margin: 0;
+}
+home-page #second-big-letter{
+    font-size: 40px;
+    margin: 0;
+}
+home-page #second-big-container{
+    z-index: -1;
+    padding: 20px;
+    margin-right: 10px;
+    position: relative;
+    background-color: #095457;
+    width: 60%;
+    left: 60%;
+    transform: translate(-60%, -20%);
+    font-size: 30px;
+}
+home-page #padded{
+    padding: 20px;
+}
+home-page #powered-container{
+    text-align: center;
+    background-color: #323232;
+    padding: 10px;
+    border-top: 5px solid gray;
+    border-bottom: 5px solid gray;
+}
+home-page #features #content-container{
+    border: 5px solid #0d7377;
+    background: linear-gradient(180deg, rgba(13,115,119,1) 0%, rgba(33,33,33,1) 100%);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 0px black;
+}
+home-page #features .col img{
+    width: 225px;
+    height: 225px;
+}
+home-page .grid-content h1{
+    border: 1px solid #0d7377;
+    margin: 0px;
+    padding: 20px;
+}
+home-page #start-explore h1{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0;
+}
+home-page #start-explore a{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+home-page #start-explore{
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 80%;
+    border: 5px solid #14ffec;
+    border-top: 15px solid #14ffec;
+    background: linear-gradient(180deg, rgba(13,115,119,1) 0%, rgba(33,33,33,1) 100%);
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+home-page #start-explore::before, home-page #start-explore::after{
+    content: "";
+    background-color: #14ffec;
+    position: absolute;
+    height: 10px;
+    width: 150px;
+}
+home-page #start-explore::before{
+    transform: skewX(50deg);
+    top: 0%;
+    left: -5%;
+}
+home-page #start-explore::after{
+    transform: translateX(-100.5%) skewX(-50deg);
+    top: 96%;
+    left: 102.5%;
+}
+
+@media screen and (max-width: 710px){
+    home-page #big-letter{
+        font-size: 35px;
+    }
+    home-page #second-big-letter{
+        font-size: 30px;
+    }
+    home-page #first-big-container{
+        letter-spacing: 0.3cm;
+        width: 70%;
+    }
+    home-page #second-big-container{
+        width: 70%;
+    }
+    home-page #start-explore::before,
+    home-page #start-explore::after{
+        width: 75px;
+    }
+}
